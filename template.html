@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CogniComp: a new kind of software consultancy. Reimagining your business from the ground up, for the AI age.">
+    <meta name="keywords" content="ai software consulting consultancy artificial intelligence business"/>
+    <title>{{title}} | CogniComp</title>
+    <link rel="canonical" href="https://cognicomp.github.io" />
+    <link rel="amphtml" href="https://cognicomp.github.io/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{title}} | CogniComp" />
+    <meta property="og:description" content="CogniComp: a new kind of software consultancy. Reimagining your business from the ground up, for the AI age." />
+    <meta property="og:url" content="/" />
+    <meta property="og:site_name" content="CogniComp" />
+    <meta property="og:image" content="https://cognicomp.github.io/background.jpg" />
+    <meta property="article:section" content="Blog"/>
+    <meta property="article:published_time" content="2019-10-16 16:40:16" />
+    <meta property="article:modified_time" content="2024-01-13 10:11:09" />
+    <meta property="og:updated_time" content="2024-01-13 10:11:09" />
+    <style>
+* {
+  box-sizing: border-box;
+}
+html, body {
+  color: #ccc;
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #333;
+  background-image: url(/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+header, footer {
+  background: #125e;
+  padding: 16px;
+  box-shadow: 0 0 16px #000;
+}
+nav {
+  display: flex;
+}
+nav > :last-child {
+  text-align: right;
+  flex-grow: 1;
+}
+nav > :last-child a {
+  padding: 0 20px;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+.logo {
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: bold;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+}
+article {
+  width: 800px;
+  max-width: 100vw;
+  margin: 0 auto;
+  flex-grow: 1;
+  padding: 0 48px;
+  background: #0008;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  box-shadow: 0 0 40px #000;
+}
+footer {
+  font-size: 0.8rem;
+}
+a, a:visited {
+  color: #fff;
+}
+
+.big {
+  font-size: 125%;
+}
+#prevnext {
+  display: flex;
+  margin-bottom: 40px;
+}
+#prevnext > :first-child {
+  flex-grow: 1;
+}
+pre {
+  white-space: pre-wrap
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/index.html">CogniComp</a>
+        </div>
+        <div>
+          <a href="/index.html">About Us</a>
+          <a href="/index.html">Services</a>
+          <a href="/blog/index.html">Blog</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article>
+        {{content}}
+        <div id="prevnext">{{prev}} {{next}}</div>
+      </article>
+      <footer>
+        <div>
+          Copyright © 2024 CogniComp, Inc.
+        </div>
+        <div>
+          <a href="/privacy-policy.html">Privacy Policy</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
